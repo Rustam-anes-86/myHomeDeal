@@ -1,0 +1,2 @@
+name="rustam"
+print(name)
