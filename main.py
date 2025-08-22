@@ -1,2 +1,0 @@
-name="rustam"
-print(name)
