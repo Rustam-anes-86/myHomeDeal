@@ -4,61 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Моя страница</title>
+<link rel="stylesheet" href="project.css">
 </head>
-
 <body>
-    <form action="/submit" method="post"><!--Родительский тег форм для создания формочек-, атрибут актион
-    в нем указывается адрес сервера для обработки данных, в методе указывается метод отправки формы-->
+<h1 id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores ut voluptatum?</h1><!-- 
+С селектором ID one свойство color: значение -коричневый цвет. Высокая приоритетность -->
+<h2 id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta vel est possimus tempore aut?</h2>
+<!-- с селектором ID two свойство color значение -красный цвет. Высокая приоритетность-->
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+    Est neque rem autem laboriosam, cupiditate vel voluptas facilis blanditiis voluptatem itaque?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ab!</p><!--тут абзац с тегом p примет 
+    синий цвет. Низкая приоритетность-->
+    <ul class="rst"><!--К селектору class в данном случае подключается цвет-зеленый , шрифт-жирный. 
+        Средняя приоритетность-->
+        <li>Первый</li>
+        <li>Второй</li>
+        <li>Третий</li>
+    </ul>
 
-    <fieldset><!--служит для визуальной группировки нескольких полей ввода в один набор, однопиксельная рамка-->
-        <legend>Паспортные данные</legend> <br><!--Используется в качестве заголовка внутри полей филдсет-->
-            <label for="name">Имя:</label><!--Тег метки к любому интерактивному тегу поля ввода-->
-            <input type="text" id="name" name="name" required><br><br><!--Тег поля ввода-->
-
-            <label for="surname">Фамилия:</label>
-            <input type="text" id="surname" name="surname" required><br><br>
-     
-    </fieldset>
-
-    <fieldset>
-            <legend>Электронная почта</legend> <br>
-
-                <label for="mail">Адрес почты:</label>
-                <input type="email" id="mail" name="mail" required><br><br>
-
-                    <label for="password">Введите пароль:</label>
-                    <input type="password" id="password" name="password" required><br><br>
-
-    </fieldset><br><br>
-
-    
-    <fieldset>
-            <legend>Ввод данных по возврату</legend> <br>
-                        <label for="message">Комментарии по возрату товара:</label>
-                        <textarea id="message" name="message" rows="10" cols="100"></textarea><br><br><!---->
-
-      
-        <label for="country">Страна возврата:</label>
-            <select id="country" name="country" required><!---->
-                <option value="">Выберите страну отправки</option><!---->
-                <option value="kz">Казахстан</option>
-                <option value="rus">Российская федерация</option>
-                <option value="us">Соединенные штаты Америки</option>
-                <option value="ca">Канада</option>
-                <option value="uk">Великобритания</option>
-                <option value="au">Aвстралия</option>
-
-            <select> <br><br>
-
-                <button type="submit">Отправка</button><br><br><!---->
-                <button type="reset">Сброс</button>
-    
-           
-
-        <fieldset>  <br><br><br>
-
-    
-                
-       </form> 
+    <h1 class="pororo" id="three">Добро пожаловать на мою веб страницу!</h1><!--В данном случае цвет элемента 
+    будет салатовым, так как селектор id наиболее весомый и специфичный , далее по весу идет селектор  class, 
+    и менее специфичный будет селектор по тегу -->
 </body>
 </html>
