@@ -2,96 +2,79 @@ body {
    height: 5000px;
 }
 
-
-
-.container {
-   width: 600px;
-   height: 400px;
-   background: grey;
-}
-
-.T-em {
-font-size: 24px;/*абсолютные размеры шрифта в пикселях*/
-text-align: center;
-font-weight: bold;
-color:blueviolet;
-}
-
-.Tt-em {
-font-size:3em;/*Размер шрифта относительно родительского  элемента*/
-text-align: center;
-font-weight: bold;
-color:red;
-
-}
-.container-2 {
-  width: 600px;
-   height: 400px;
-   background: silver;
-}
-
-.T-rem {
-font-size: 12px; /*абсолютные размеры шрифта в пикселях*/
-text-align: center;
-font-weight: bold;
-color:coral;
-}
-
-.Tt-rem {
-font-size:2rem;/*Размер шрифта относительно корневого элемента HTML*/
-text-align: center;
-font-weight: bold;
-color:darkcyan;
-}
-.father {
-width: 700px;/*абсолютный размер объекта в пикселях*/
-height: 300px;
-background-color:red
+#kartinka 
+{
+   width: 150px;
+   height: 100px;
+  background-color: green;
+     margin:  0px;
+     padding: 10px;
 
 }
 
-.son {
-   width: 70%;/*относительный размер объекта в процентах*/
-   height: 70%;
-   background-color:blue
-   
+.block {
+     background-color: lightblue;
+     margin: 10px ;
+     padding: 10px;
 }
 
-#one {
-   background:#f2e71e;/*шестнадцатиричная модель цветового кода*/
-
-   width: 600px;
-   height: 600px;
-   color:#8e2459;/*шестнадцатиричная модель цветового кода*/
- 
-   font-size: 80px;
-   font-weight: bold;
-   text-align: center;
-   line-height: 600px;
-}
-
-#two {
-   background: rgb(115, 113, 81);/*Цветовая модель rgb*/
-   width: 600px;
-   height: 600px;
-   color: rgb(97, 87, 179);/*Цветовая модель rgb*/
-   font-size: 100px;
-   font-weight: bold;
-   text-align: center;
-   line-height: 600px;
-}
-
-#three {
-   background:rgb(245, 62, 22);/*Цветовая модель rgb*/
-   width: 600px;
-   height: 600px;
-
-   color:rgb(47, 149, 52, 0.8) ;/*цветовая модель с rgb альфа каналом, который дает прозрачность цвету, 
-   0 полностью прозрачный, 1,0 полностью не прозрачный*/
-   font-size: 100px;
-   font-weight: bold;
-   text-align: center;
-   line-height: 600px;
-   
+.pogoda {
+display: inline;/*Тут изначально был блочный элемент -тег абзаца, с помощью свойства дисплей инлайн преобразовался в линейный элемент*/
+  background-color:#c37cc8;
+     margin:  100px;
+     padding: 5px;
+     font-size: 30px;
+     font-weight: 700;
+     text-decoration: wavy;
+     color: darkgreen;
 
 }
+
+.ezhik {
+display: block;/*Здесь была картинка с тегом img -линейный элемент, с помощью свойства дисплей блок,
+ преобразовали его в блочный элемент, который занимает всю ширину экрана */
+ background: blueviolet;
+     margin: 10px ;
+     padding: 10px;
+  width: 150px;
+height: 100px;
+}
+
+#container {
+ background-color: #b5d946;
+     margin:  0px;
+     padding: 50px;
+}
+
+.block1 {
+
+  background-color: lightblue;
+     margin: 10px ;
+     padding: 10px;
+
+}
+
+.block2 {
+display: block;./*Здесь была картинка с тегом img -линейный элемент, с помощью свойства дисплей блок,
+ преобразовали его в блочный элемент, который занимает всю ширину экрана */
+ background: #b8aada;
+     margin: 10px ;
+     padding: 10px;
+  width: 150px;
+height: 100px;
+}
+.block3 {
+display: block;/**/
+ background: #1ab8ac;
+     margin: 10px ;
+     padding: 10px;
+}
+
+
+
+
+
+
+
+
+
