@@ -1,80 +1,116 @@
-body {
-   height: 5000px;
+label {
+   font-size: 18px;
+   color: blue;
 }
-
-#kartinka 
-{
-   width: 150px;
-   height: 100px;
-  background-color: green;
-     margin:  0px;
-     padding: 10px;
-
+.input {
+   border-color: black;
+  
 }
-
-.block {
-     background-color: lightblue;
-     margin: 10px ;
-     padding: 10px;
-}
-
-.pogoda {
-display: inline;/*Тут изначально был блочный элемент -тег абзаца, с помощью свойства дисплей инлайн преобразовался в линейный элемент*/
-  background-color:#c37cc8;
-     margin:  100px;
-     padding: 5px;
-     font-size: 30px;
-     font-weight: 700;
-     text-decoration: wavy;
-     color: darkgreen;
+.input:focus {/*срабатывает когда элемент например кнопка  получает фокус через клик мышкой или с помощью клавиатуры 
+   и активен пока пользователь не нажмет мышкой или клавиатурой на другой элемент*/
+   color: chocolate;
+   border-color: red;
+   outline: none;
 
 }
 
-.ezhik {
-display: block;/*Здесь была картинка с тегом img -линейный элемент, с помощью свойства дисплей блок,
- преобразовали его в блочный элемент, который занимает всю ширину экрана */
- background: blueviolet;
-     margin: 10px ;
-     padding: 10px;
-  width: 150px;
-height: 100px;
+#but {
+
+   background-color:blueviolet;
+   font-size: 16px;
+   font-weight: 900;
+   color: azure;
+   padding: 10px 20px;
+   border-radius: 10px;
+   border: 5px solid red;
 }
 
-#container {
- background-color: #b5d946;
-     margin:  0px;
-     padding: 50px;
+#but:hover {/*Этот псевдокласс срабатывает при наведении например пользователем курсора на элемент, например  на кнопку в данном случае
+   либо другой элемент например на текст в абзаце и заголовке, текст ссылки*/
+   background-color: coral;
+   color: darkblue;
 }
 
-.block1 {
+#but:active {/*этот псевдокласс применяется когда элемент находится в активированном состоянии, например кнопка нажата*/
 
-  background-color: lightblue;
-     margin: 10px ;
-     padding: 10px;
+ background-color:red;
+ color:beige;
+ }
 
+ .qqq:first-child {/*Первый ребенок своего родителя*/
+   color: blue;
+   font-weight: bold;
+   font-size: 36px;
+ }
+
+  .qqq:last-child {/*Последний ребенок своего родителя*/
+   color: red;
+   font-weight: bold;
+   font-size: 36px;
+ }
+
+ #one:hover/*Этот псевдокласс срабатывает при наведении например пользователем курсора на элемент, например  на кнопку в данном случае
+   либо другой элемент например на текст в абзаце и заголовке, текст ссылки*/
+ {
+   color: green;
+   font-size: 26px;
+   font-weight: bold;
+ }
+
+  #two:focus/*срабатывает когда элемент например кнопка  получает фокус через клик мышкой или с помощью клавиатуры 
+   и активен пока пользователь не нажмет мышкой или клавиатурой на другой элемент*/
+ {
+   color: purple;
+   font-size: 26px;
+   font-weight: bold;
+ }
+
+ .www:nth-child(odd) {/*N -ый ребенок своего родителя , применяется к нечетным элементам списка*/
+color: red;
+ font-size: 26px;
+   font-weight: bold;
+ }
+  .www:nth-child(even) {/*N -ый ребенок своего родителя , применяется к четным элементам списка*/
+color: blue;
+font-size: 26px;
+   font-weight: bold;
+ }
+
+.eee {
+   color: green;
+   font-weight: bold;
+   font-size: 26px;
 }
+  .eee:first-child {/*Первый ребенок своего родителя*/
+   color: orangered;
+   font-weight: bold;
+   font-size: 32px;
+ }
 
-.block2 {
-display: block;./*Здесь была картинка с тегом img -линейный элемент, с помощью свойства дисплей блок,
- преобразовали его в блочный элемент, который занимает всю ширину экрана */
- background: #b8aada;
-     margin: 10px ;
-     padding: 10px;
-  width: 150px;
-height: 100px;
-}
-.block3 {
-display: block;/**/
- background: #1ab8ac;
-     margin: 10px ;
-     padding: 10px;
-}
+  .eee:last-child {/*Последний ребенок своего родителя*/
+   color: grey;
+   font-weight: bold;
+   font-size: 32px;}
 
 
+   .rrr {
+   
+   color: green;
+   font-weight: bold;
+   font-size: 26px;}
 
+   .rrr:nth-child(1):hover {/* N-ый ребенок  своего родителя, в данном случае первый*/
+      color: #b91094;
+   font-weight: bold;
+   font-size: 32px;}
 
+   .rrr:nth-child(4):focus /* N-ый ребенок  своего родителя, в данном случае четвертый*/
+   {
+      color: #4077c1;
+   font-weight: bold;
+   font-size: 32px;}
 
-
-
-
+   div a {
+         display: block/*Свойство из прошлой темы , переводит строчный элементы в блочные */
+   }
 
