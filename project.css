@@ -1,116 +1,233 @@
-label {
-   font-size: 18px;
-   color: blue;
+
+body {
+   padding: 10px;
+   position: relative;
+   height: 6000px;
 }
-.input {
-   border-color: black;
+
+.parent_1 {
+border: solid 3px red;
+height: 500px;
+background-color:gainsboro;
+position:static;
+width: 1300px;
+margin: 0 auto;
+
+}
+
+
+#st {
+   text-align: center;
+   font-size: 16px;
+   color: black;
+   font-weight: 600;
+}
+
+.block_1 {
+
+   height: 100px;
+   line-height: 100px;
+   text-align: center;
+   background-color: brown;
+   position: static;/*position:static изначально стоит по умолчанию и его прописывать отдельно не нужно, распологается с нормальным потоком документа*/
+ 
   
 }
-.input:focus {/*срабатывает когда элемент например кнопка  получает фокус через клик мышкой или с помощью клавиатуры 
-   и активен пока пользователь не нажмет мышкой или клавиатурой на другой элемент*/
-   color: chocolate;
-   border-color: red;
-   outline: none;
 
-}
-
-#but {
-
-   background-color:blueviolet;
-   font-size: 16px;
-   font-weight: 900;
-   color: azure;
-   padding: 10px 20px;
-   border-radius: 10px;
-   border: 5px solid red;
-}
-
-#but:hover {/*Этот псевдокласс срабатывает при наведении например пользователем курсора на элемент, например  на кнопку в данном случае
-   либо другой элемент например на текст в абзаце и заголовке, текст ссылки*/
-   background-color: coral;
-   color: darkblue;
-}
-
-#but:active {/*этот псевдокласс применяется когда элемент находится в активированном состоянии, например кнопка нажата*/
-
- background-color:red;
- color:beige;
- }
-
- .qqq:first-child {/*Первый ребенок своего родителя*/
-   color: blue;
-   font-weight: bold;
-   font-size: 36px;
- }
-
-  .qqq:last-child {/*Последний ребенок своего родителя*/
-   color: red;
-   font-weight: bold;
-   font-size: 36px;
- }
-
- #one:hover/*Этот псевдокласс срабатывает при наведении например пользователем курсора на элемент, например  на кнопку в данном случае
-   либо другой элемент например на текст в абзаце и заголовке, текст ссылки*/
- {
-   color: green;
-   font-size: 26px;
-   font-weight: bold;
- }
-
-  #two:focus/*срабатывает когда элемент например кнопка  получает фокус через клик мышкой или с помощью клавиатуры 
-   и активен пока пользователь не нажмет мышкой или клавиатурой на другой элемент*/
- {
-   color: purple;
-   font-size: 26px;
-   font-weight: bold;
- }
-
- .www:nth-child(odd) {/*N -ый ребенок своего родителя , применяется к нечетным элементам списка*/
-color: red;
- font-size: 26px;
-   font-weight: bold;
- }
-  .www:nth-child(even) {/*N -ый ребенок своего родителя , применяется к четным элементам списка*/
-color: blue;
-font-size: 26px;
-   font-weight: bold;
- }
-
-.eee {
-   color: green;
-   font-weight: bold;
-   font-size: 26px;
-}
-  .eee:first-child {/*Первый ребенок своего родителя*/
-   color: orangered;
-   font-weight: bold;
-   font-size: 32px;
- }
-
-  .eee:last-child {/*Последний ребенок своего родителя*/
-   color: grey;
-   font-weight: bold;
-   font-size: 32px;}
-
-
-   .rrr {
+.block_2 {
    
-   color: green;
-   font-weight: bold;
-   font-size: 26px;}
+   height: 100px;
+   line-height: 100px;
+   color: beige;
+   text-align: center;
+   background-color:rgb(92, 62, 161);
+   position: static;
+ 
+  
+}
+.block_3 {
+ 
+   height: 100px;
+   line-height: 100px;
+   text-align: center;
+   background-color:rgb(65, 172, 106);
+   position: static;
+  
+}
 
-   .rrr:nth-child(1):hover {/* N-ый ребенок  своего родителя, в данном случае первый*/
-      color: #b91094;
-   font-weight: bold;
-   font-size: 32px;}
 
-   .rrr:nth-child(4):focus /* N-ый ребенок  своего родителя, в данном случае четвертый*/
-   {
-      color: #4077c1;
-   font-weight: bold;
-   font-size: 32px;}
 
-   div a {
-         display: block/*Свойство из прошлой темы , переводит строчный элементы в блочные */
-   }
 
+
+.parent_2 {
+   margin-top: 500px;
+   margin-bottom: 300px;
+   border: solid 3px green;
+   height: 500px;
+   background-color:rgb(192, 196, 149);
+   position:static;
+   width: 1300px;
+   margin-left: 50%;
+   transform: translateX(-50%);
+
+}
+
+#st2 {
+   text-align: center;
+   font-size: 16px;
+   color: black;
+   font-weight: 600;
+}
+
+
+
+.block_10 {
+
+   height: 100px;
+   line-height: 100px;
+   text-align: center;
+   background-color: rgb(167, 72, 196);
+   position: static;
+ 
+  
+}
+
+.block_20 {
+   
+   height: 100px;
+   line-height: 100px;
+   color: beige;
+   text-align: center;
+   background-color:rgb(51, 29, 102);
+   position: relative;/*Элементы располагаются в обычном потоке , 
+   но используя свойства топ, лефт, райт и боттом , можно смещать элемент относительно других элементов, при этом остальные элементы никуда 
+   не сдвигаются, при позишн статик свойства райт, лефт боттом и топ не работают*/
+   top: 10px;
+   left: 20px;
+ 
+  
+}
+.block_30 {
+ 
+   height: 100px;
+   line-height: 100px;
+   text-align: center;
+   background-color:rgb(77, 173, 136);
+   position: static;
+  
+}
+
+
+
+.parent_3 {
+   margin-top: 500px;
+   margin-bottom: 500px;
+   border: solid 3px rgb(155, 21, 32);
+   height: 500px;
+   background-color:rgb(192, 196, 149);
+   width: 100%;
+   height: 1000px;
+   position:relative;
+
+}
+
+#st3 {
+   text-align: center;
+   font-size: 16px;
+   color: black;
+   font-weight: 600;
+}
+
+.block_100 {
+   width: 100%;
+   line-height: 100px;
+   text-align: center;
+   background-color: rgb(167, 72, 196);
+   position: absolute;/*Элемент c позицией абсолют выпадает из обычного  потока, то есть его место занимают блочные элементы
+   которые находились ниже и ему также можно задавать свойства лефт, райт, топ и боттом относительно его ближайшего родителя*/
+   right: 100px;
+   bottom: 200px;
+   
+ 
+  
+}
+
+.block_200 {
+   width: 100%;
+   line-height: 100px;
+   color: white;
+   text-align: center;
+   background-color:rgb(51, 29, 102);
+
+  
+}
+.block_300 {
+   width: 100%;
+   color: black;
+   line-height: 100px;
+   text-align: center;
+   background-color:rgb(77, 173, 136);
+   position: static;
+  
+}
+
+.parent_4 {
+   color: aliceblue;
+   width: 100px;
+   line-height: 200px;
+   text-align: center;
+  background-color: blueviolet;
+   position: fixed;/*Элемент c позицией fixed выпадает из обычного  потока, и как бы фиксируется к экрану при прокрутке,
+   его положение также можно задавать с помощью свойств : топ, боттом, райт и лефт*/
+ 
+   bottom: 0px;
+   right: 0;
+
+}
+
+.parent_5 {
+   margin-top: 300px;
+   width: 100%;
+   height: 2200px;
+   position: relative; 
+   background-color: rgb(199, 189, 189);
+   border: solid 6px red;
+
+}
+
+.Heading_1 {
+      width: 80%;
+      line-height: 200px;
+      text-align: center;
+      background-color: blue;
+      color: bisque;
+      top: 0px;;
+      position:sticky;/*Элемент ведет себя при прокрутке как элемент со свойством static, 
+      затем достигая top своего родителя как бы прилипает к экрану, тем самым ведет себя уже как позишн фиксед*/
+      border: solid 3px red;
+      margin-top: 400px;
+
+}
+
+.Heading_2 {
+      width: 80%;
+      line-height: 200px;
+      text-align: center;
+      background-color: blue;
+      color: bisque;
+      top: 0px;;
+      position:sticky;
+      border: solid 3px red;
+      margin-top: 400px;
+}
+
+
+
+p {
+   width: 80%;
+   line-height: 100px;
+   text-align: center;
+  background-color: rgb(109, 63, 85);
+  color: bisque;
+   border: solid 3px red;
+}
